@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon/icomoon.eot?awooh1");
+  src: url("fonts/icomoon/icomoon.eot?awooh1#iefix") format("embedded-opentype"), url("fonts/icomoon/icomoon.ttf?awooh1") format("truetype"), url("fonts/icomoon/icomoon.woff?awooh1") format("woff"), url("fonts/icomoon/icomoon.svg?awooh1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-basket:before {
+  content: "";
+}
+
+.icon-card:before {
+  content: "";
+}
+
+.icon-tooltip:before {
+  content: "";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after, .clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  background: url(../images/bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 45, 62, 0.87);
+}
+
+.tabs {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+}
+.tabs-list {
+  background: #2b3040;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs-item {
+  text-align: center;
+  transition: none;
+}
+.tabs-item:hover .tabs__link {
+  color: #13e28d;
+  border-bottom: 2px solid #13e28d;
+}
+.tabs-item:hover .tabs__link:focus {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.tabs__link {
+  transition: none;
+  display: block;
+  padding: 33px 20px 30px;
+  color: #8d91a3;
+  text-decoration: none;
+  border-bottom: 2px solid #2b3040;
+}
+.tabs__link:focus {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.tabs__icon {
+  font-size: 24px;
+}
+.tabs__name {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.tabs__card {
+  background: #212534;
+  padding: 60px 45px;
+}
+.tabs__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs__imgwrap {
+  position: relative;
+  width: 500px;
+  height: 230px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.tabs__imgwrap:before {
+  content: "";
+  width: 156px;
+  height: 230px;
+  background: url("../images/gradient.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.tabs__img {
+  width: 100%;
+  height: 100%;
+}
+.tabs__maintext {
+  float: left;
+}
+.tabs__rate {
+  width: 40px;
+  height: 40px;
+  float: right;
+  border: 1px solid #8d91a3;
+  color: #8d91a3;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
+}
+.tabs__title {
+  font-size: 32px;
+  margin: 12px 0 7px;
+}
+.tabs__date {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.tabs__description {
+  clear: both;
+  color: #8d91a3;
+  font-size: 14px;
+  line-height: 22px;
+}
+.tabs__character {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs__rate-stars {
+  padding: 0 5px 0 20px;
+  font-size: 20px;
+}
+.tabs__rate-star--yellow {
+  color: #ffdd3f;
+}
+.tabs__rate-star--grey {
+  color: #4b536b;
+}
+.tabs__sale {
+  color: #ffdd3f;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.tabs__money {
+  font-size: 32px;
+}
+.tabs__btn {
+  width: 166px;
+  font-size: 16px;
+  line-height: 55px;
+  background: #13e28d;
+  border-radius: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+.tabs__btn:hover {
+  background: #3e4cb4;
+}
+
+/*# sourceMappingURL=styles.css.map */
